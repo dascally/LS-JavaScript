@@ -1,5 +1,6 @@
 let rlSync = require('readline-sync');
 
-let name = rlSync.question("What's your name?\n");
+let firstName = rlSync.question("What's your first name? ");
+let lastName = rlSync.question("What's your last name? ");
 
-console.log(`Hello, ${name}!`);
+console.log(`Hello, ${firstName} ${lastName}!`);
