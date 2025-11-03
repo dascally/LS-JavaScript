@@ -4,13 +4,7 @@ function factorial(n) {
     if (n <= 0)
         throw new RangeError('factorial: Input must be a positive integer.');
 
-    let result = 1;
-
-    for (let i = result; i <= n; i++) {
-        result *= i;
-    }
-
-    return result;
+    return (n === 1) ? 1 : n * factorial(n - 1);
 }
 
 console.log(factorial(1));
